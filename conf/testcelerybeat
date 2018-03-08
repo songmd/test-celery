@@ -1,0 +1,17 @@
+
+# Absolute or relative path to the 'celery' command:
+CELERY_BIN="/var/www/genv/bin/python3.6 -m celery"
+
+
+# App instance to use
+# comment out this line if you don't use an app
+CELERY_APP="testcelery"
+
+
+# Where to chdir at start.
+export DJANGO_SETTINGS_MODULE="testcelery.settings"
+CELERYBEAT_CHDIR="/var/www/testcelery"
+CELERYD_CHDIR="/var/www/testcelery"
+
+CELERYBEAT_LOG_FILE="/var/www/log/celery/celerybeat.log"
+CELERYBEAT_PID_FILE="/var/www/run/celery/celerybeat.pid"

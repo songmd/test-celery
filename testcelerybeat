@@ -1,0 +1,2 @@
+#!/bin/sh -e
+/var/www/genv/bin/python3.6 -m celery -A testcelery beat -l info --workdir=/var/www/testcelery/
